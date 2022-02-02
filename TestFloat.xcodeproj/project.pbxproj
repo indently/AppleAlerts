@@ -11,6 +11,8 @@
 		7A405B4827AA939D00EC2F91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A405B4727AA939D00EC2F91 /* ContentView.swift */; };
 		7A405B4A27AA939F00EC2F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A405B4927AA939F00EC2F91 /* Assets.xcassets */; };
 		7A405B4D27AA939F00EC2F91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A405B4C27AA939F00EC2F91 /* Preview Assets.xcassets */; };
+		7A405B5627AA94A200EC2F91 /* EFCountingLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 7A405B5527AA94A200EC2F91 /* EFCountingLabel */; };
+		7A405B5927AA955400EC2F91 /* SPAlert in Frameworks */ = {isa = PBXBuildFile; productRef = 7A405B5827AA955400EC2F91 /* SPAlert */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A405B5927AA955400EC2F91 /* SPAlert in Frameworks */,
+				7A405B5627AA94A200EC2F91 /* EFCountingLabel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = TestFloat;
+			packageProductDependencies = (
+				7A405B5527AA94A200EC2F91 /* EFCountingLabel */,
+				7A405B5827AA955400EC2F91 /* SPAlert */,
+			);
 			productName = TestFloat;
 			productReference = 7A405B4227AA939D00EC2F91 /* TestFloat.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = 7A405B3927AA939D00EC2F91;
+			packageReferences = (
+				7A405B5427AA94A200EC2F91 /* XCRemoteSwiftPackageReference "EFCountingLabel" */,
+				7A405B5727AA955400EC2F91 /* XCRemoteSwiftPackageReference "SPAlert" */,
+			);
 			productRefGroup = 7A405B4327AA939D00EC2F91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +286,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +315,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +353,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A405B5427AA94A200EC2F91 /* XCRemoteSwiftPackageReference "EFCountingLabel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EFPrefix/EFCountingLabel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7A405B5727AA955400EC2F91 /* XCRemoteSwiftPackageReference "SPAlert" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPAlert";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A405B5527AA94A200EC2F91 /* EFCountingLabel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A405B5427AA94A200EC2F91 /* XCRemoteSwiftPackageReference "EFCountingLabel" */;
+			productName = EFCountingLabel;
+		};
+		7A405B5827AA955400EC2F91 /* SPAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A405B5727AA955400EC2F91 /* XCRemoteSwiftPackageReference "SPAlert" */;
+			productName = SPAlert;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A405B3A27AA939D00EC2F91 /* Project object */;
 }
